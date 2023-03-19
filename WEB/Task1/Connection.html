@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Connection">
+    <title>Зворотній зв'язок</title>
+</head>
+<body>
+    <header>
+        <a href="P1.html"><p>Серіали</p></a><span><a href="Registration.html"><p>Реєстрація</p></a><a href="Connection.html"><p>Зворотній зв'язок</p></a></span>
+    </header>
+    <main>
+        <form action = "" method = "get">
+        <article>
+            <label>Введіть номер телефону для зворотнього зв'язку</label><br>
+            <input type = "tel" id = "phone number" name = "phone number" placeolder = "+38(098)-432-55-71" pattern = "[0-9]{2(3)}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+        </article>
+
+        <article>
+            <label>Категорія:</label>
+            <select id = "select" name = "secect">
+                <option value = "скарга">Скарга</option>
+                <option value = "підтримка">Підтрмка</option>
+                <option value = "побажання">Побажання</option>
+            </select>
+        </article>
+
+        <article>
+            <textarea name = "message" row = "20" cols = "30">
+                
+            </textarea>
+        </article>
+
+        <article>
+            <label for = "myfile">Вибрати файл:</label>
+            <input type = "file" id = "myfile" name = "my file">
+        </article>
+
+        <article>
+            <label>Способ зворотнього зв'язку:</label>
+            <select name = "select" id = "select">
+                <option value = "телефон">Зателефонувати</option>
+                <option value = "пошта">Повідомлення на електронну пошту</option>
+                <option value = "sms">Прислати SMS</option>
+            </select>
+        </article>
+        <input type = "submit" onclick = "alert('Дякуємо за завернення'); location.reload()">
+        </form>
+    </main>
+</body>
