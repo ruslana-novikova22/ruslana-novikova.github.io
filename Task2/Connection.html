@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Connection">
+    <title>Зворотній зв'язок</title>
+<style>
+     body{
+            width: 100%;
+            margin: 0;
+            padding:0;
+        }
+        header{
+            display: block;
+            height: 25px;
+            width: 100%;
+            background-color: rgb(241, 79, 106);
+            border-bottom: 2px solid rgb(249, 245, 245);
+        }
+        header p{
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: 200;
+            color: white;
+            display: inline;
+        }
+        header span{
+            float: left;
+        }
+        header a{
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        header a :hover{
+            background-color: rgb(243, 175, 175);
+        }
+        main form,input{
+            margin: 30px 0;
+        }
+        main form{
+            margin: 0 auto;
+            background: rgb(227, 225, 244);
+            width: 440px;
+            padding: 20px;
+            height: 350px;
+            border-radius: 20px 20px;
+            align-items: center;
+            justify-content: center;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <a href="P1.html"><p>Серіали</p></a><span><a href="Registration.html"><p>Реєстрація</p></a><a href="Connection.html"><p>Зворотній зв'язок</p></a></span>
+    </header>
+    <main>
+        <center><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"></center>
+        <center>
+        <form action = "" method = "get">
+        <article>
+            <label>Введіть номер телефону для зворотнього зв'язку</label><br>
+            <input type = "tel" id = "phone number" name = "phone number" placeolder = "+38(098)-432-55-71" pattern = "[0-9]{2(3)}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+        </article>
+
+        <article>
+            <label>Категорія:</label>
+            <select id = "select" name = "secect">
+                <option value = "скарга">Скарга</option>
+                <option value = "підтримка">Підтрмка</option>
+                <option value = "побажання">Побажання</option>
+            </select>
+        </article>
+
+        <article>
+            <textarea name = "message" row = "20" cols = "30">
+                
+            </textarea>
+        </article>
+
+        <article>
+            <label for = "myfile">Вибрати файл:</label>
+            <input type = "file" id = "myfile" name = "my file">
+        </article>
+
+        <article>
+            <label>Способ зворотнього зв'язку:</label>
+            <select name = "select" id = "select">
+                <option value = "телефон">Зателефонувати</option>
+                <option value = "пошта">Повідомлення на електронну пошту</option>
+                <option value = "sms">Прислати SMS</option>
+            </select>
+        </article>
+        <input type = "submit" onclick = "alert('Дякуємо за завернення'); location.reload()">
+        </form>
+        </center>
+    </main>
+    <footer>
+        <h3>Дані про автора:</h3><br>
+        Новікова Руслана Вікторівна<br>
+        Студентка 1го курсу, СА1<br>
+        Контакти: +38(098)-822-79-**
+    </footer>
+</body>
