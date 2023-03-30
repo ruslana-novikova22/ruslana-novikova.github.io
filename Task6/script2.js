@@ -7,8 +7,9 @@
 
 let Visitors = [37, 22, 40, 7, 26, 43, 10];
 for(let i = 0; i<Visitors.length;i++){
-    if(Visitors[i]<20)
-    console.log(i);
+    if(Visitors[i]<20){
+        console.log(i);
+    }
 }
 
 let minimum = Math.min(...Visitors);
@@ -21,9 +22,7 @@ console.log(maxIndex);
 
 let totalVisitors = 0; 
 for (let i = 0; i <= 4; i++) {
-  if (Visitors[i]) {
     totalVisitors += Visitors[i];
-  }
 }
 
 let sumWeekends = Visitors[5]+Visitors[6];
