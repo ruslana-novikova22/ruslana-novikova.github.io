@@ -30,8 +30,8 @@ var anonymusGetSeason = function (month){
 }
 console.log(anonymusGetSeason(month));
 
-month = prompt("Введіть місяць")
-function MakeOperation(month){
+month = prompt("Введіть місяць");
+let lambdaSeason = (month) =>{
     if (month >= 3 && month <= 5) {
         return "весна";
       } else if (month >= 6 && month <= 8) {
@@ -42,5 +42,4 @@ function MakeOperation(month){
         return "зима";
       }
 }
-console.log(MakeOperation(month, x => month))
-
+console.log(lambdaSeason(month));
