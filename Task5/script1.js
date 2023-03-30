@@ -6,13 +6,11 @@ function Mult(firstNumber, secondNumber, thirdNumber, forthNumber){
   return result;
 }
 
-var anonymusMult = function Mult(firstNumber, secondNumber, thirdNumber, forthNumber){
+var anonymusMult = function(firstNumber, secondNumber, thirdNumber, forthNumber){
   let result = firstNumber*secondNumber*thirdNumber*forthNumber;
   return result;
 }
 console.log(anonymusMult(3,2,5,6));
 
-function MakeOperation(firstNumber, secondNumber, thirdNumber, forthNumber, operation){
-  return operation(firstNumber, secondNumber, thirdNumber, forthNumber)
-}
-console.log(MakeOperation(3,2,5,6, (x,y,z,t) => x*y*z*t));
+let lambdaMult = (firstNumber, secondNumber, thirdNumber, forthNumber) => {return firstNumber*secondNumber*thirdNumber*forthNumber; };
+console.log(lambdaMult(3,2,5,6));
