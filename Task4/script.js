@@ -49,9 +49,9 @@ while (true)
   if (N === null || N === " "){
     break;
   }
-  N = parseFloat(n);
+  N = parseFloat(N);
   let square = N * N;
-  console.log(`Квадрат числа ${N} дорівнює ${N}`);
+  console.log(`Квадрат числа ${N} дорівнює ${N*N}`);
   let continueInput = confirm("Продовжити введення чисел?");
   if (!continueInput){
     break; 
