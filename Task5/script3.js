@@ -6,14 +6,13 @@ function Inch(Santimeters){
   return inch;
 }
 
-var anonymusInch = function Inch(Santimeters){
+var anonymusInch = function(Santimeters){
   let inch = Santimeters * 0.39;
   return inch;
 }
 console.log(anonymusInch(prompt("Довжина в сантиметрах")))
 
 let Santimeters = prompt("Довжина в сантиметрах")
-function MakeOperation(Santimeters, n, operation){
-  return operation(Santimeters, n)
-}
-console.log(MakeOperation(Santimeters, n, (x,y) => x*y));
+let n = 0.39;
+let lambdaInch = (Santimeters, n ) => {return Santimeters*n; };
+console.log(lambdaInch(Santimeters, n));
