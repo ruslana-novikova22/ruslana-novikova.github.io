@@ -1,0 +1,68 @@
+Завдання 1. Створити форму для реєстрації. Форма повинна містити поля для введення імені,
+прізвища, електронної пошти, паролю, номеру телефону, короткого тексту, елемент для вибору
+статі та кнопку відправити. Використати css файл для візуального оформлення форми.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+                width: 100%;
+                margin: 0;
+                padding:0;
+                background-color: rgb(243, 137, 224);
+            }
+        form{   
+                margin: 0 auto;
+                background: rgba(191, 92, 224, 0.662);
+                width: 440px;
+                padding: 20px;
+                height: 350px;
+                border-radius: 20px 20px;
+                align-items: center;
+                justify-content: center;
+            }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form method="post" name = "Registration">
+            <label for = "name">Ім'я:</label><br>
+            <input type = "text" id = "name" name = "name"><br>
+
+            <label for = "name">Прізвище:</label><br>
+            <input type = "text" id = "surname" name = "surname"><br>
+
+            <label for = "email">Введіть пошту:</label><br>
+            <input type = "email" id = "email" name = "email"><br>
+
+            <label for = "password">Пароль:</label><br>
+            <input type = "password" id = "password" name = "password"><br>
+
+            <label for = "phone number">Номер телефону:</label><br>
+            <input type = "tel" id = "phone number" name = "phone number" placeolder = "+38(098)-432-55-71" pattern = "[0-9]{2(3)}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required><br>
+
+            <label>Стаття:</label>
+            <select id = "select" name = "secect">
+                <option value = "новини">Новини</option>
+                <option value = "Серіали">Серіали</option>
+                <option value = "Форум">Форум</option>
+            </select><br>
+            
+            <input type = "checkbox" id = "vehicle" name = "Стать">
+            <label for="vehicle">Жіноча</label><br>
+            <input type = "checkbox" id = "vehicle" name = "Стать">
+            <label for="vehicle">Чоловіча</label><br>
+
+            <textarea name = "message" row = "20" cols = "30"></textarea><br>
+            
+            <input type = "submit" value = "Зареєструватися">
+        </form>
+    </main>
+</body>
+</html>
