@@ -11,7 +11,7 @@ while(i*i<=N){
 //22.Знайти суму чисел від 100 до 200 кратних 17.
 let sum = 0;
 for (let i=100; i<=200; i++){
-    if(i%17===0){
+    if(i%17==0){
         sum+=i;
     }
 }
@@ -23,8 +23,7 @@ console.log(sum);
 let sum = 0;
 let count = 0;
 while (sum <= 100) {
-  const input = prompt('Введіть число:');
-  const num = Number(input);
+  const num = Number(prompt('Введіть число:'));
   sum += num;
   count++;
 }
@@ -34,7 +33,7 @@ console.log(count);
 //18 . Дані натуральні числа від 20 до 50. Надрукувати ті з них, які діляться
 //на 3, але не діляться на 5.
 for (let i = 20; i <= 50; i++){
-   if(i%3 === 0 && i%5 !== 0){
+   if(i%3 == 0 && i%5 != 0){
         console.log(i);
     }
 }
@@ -46,7 +45,7 @@ for (let i = 20; i <= 50; i++){
 while (true)
 {
   let N = prompt("Введіть число:");
-  if (N === null || N === " "){
+  if (N == null || N == " "){
     break;
   }
   N = parseFloat(N);
