@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Курс валют</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Курс валют</h1>
+    <table id="currency-table">
+        <tr>
+            <th>Валюта</th>
+            <th>Курс</th>
+        </tr>
+    </table>
+
+    <script>
+        // Отримати дані про курс валют з Національного банку України
+        fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
+            .then(response => response.json())
+            .then(data => {
+                const currencyTable = document.getElementById('currency-table');
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+                    const currencyCell = document.createElement('td');
+                    const rateCell = document.createElement('td');
+
+                    currencyCell.textContent = item.cc;
+                    rateCell.textContent = item.rate;
+
+                    row.appendChild(currencyCell);
+                    row.appendChild(rateCell);
+                    currencyTable.appendChild(row);
+                });
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>
