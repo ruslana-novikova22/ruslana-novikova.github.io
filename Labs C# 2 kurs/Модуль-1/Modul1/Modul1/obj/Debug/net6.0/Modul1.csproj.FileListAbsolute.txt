@@ -1,0 +1,15 @@
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\bin\Debug\net6.0\Modul1.exe
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\bin\Debug\net6.0\Modul1.deps.json
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\bin\Debug\net6.0\Modul1.runtimeconfig.json
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\bin\Debug\net6.0\Modul1.dll
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\bin\Debug\net6.0\Modul1.pdb
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\Modul1.csproj.AssemblyReference.cache
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\Modul1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\Modul1.AssemblyInfoInputs.cache
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\Modul1.AssemblyInfo.cs
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\Modul1.csproj.CoreCompileInputs.cache
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\Modul1.dll
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\refint\Modul1.dll
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\Modul1.pdb
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\Modul1.genruntimeconfig.cache
+C:\Users\MegaNotik\Desktop\Універ\Лабораторні роботи C#\Labs C# 2 kurs\Модуль-1\Modul1\Modul1\obj\Debug\net6.0\ref\Modul1.dll
