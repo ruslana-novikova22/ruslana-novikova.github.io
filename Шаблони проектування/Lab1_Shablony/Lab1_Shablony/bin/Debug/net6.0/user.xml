@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Users>
+	<User>
+		<ID>1</ID>
+		<Name>John Doe</Name>
+		<Avatar>avatar1.jpg</Avatar>
+	</User>
+	<User>
+		<ID>2</ID>
+		<Name>Alice Frank</Name>
+		<Avatar>avatar2.jpg</Avatar>
+	</User>
+	<User>
+		<ID>3</ID>
+		<Name>Bob Watson</Name>
+		<Avatar>avatar3.jpg</Avatar>
+	</User>
+</Users>
