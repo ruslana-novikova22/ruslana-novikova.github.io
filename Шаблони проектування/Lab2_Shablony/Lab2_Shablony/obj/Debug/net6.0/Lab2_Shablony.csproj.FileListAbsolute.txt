@@ -1,0 +1,15 @@
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\bin\Debug\net6.0\Lab2_Shablony.exe
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\bin\Debug\net6.0\Lab2_Shablony.deps.json
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\bin\Debug\net6.0\Lab2_Shablony.runtimeconfig.json
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\bin\Debug\net6.0\Lab2_Shablony.dll
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\bin\Debug\net6.0\Lab2_Shablony.pdb
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\Lab2_Shablony.csproj.AssemblyReference.cache
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\Lab2_Shablony.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\Lab2_Shablony.AssemblyInfoInputs.cache
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\Lab2_Shablony.AssemblyInfo.cs
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\Lab2_Shablony.csproj.CoreCompileInputs.cache
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\Lab2_Shablony.dll
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\refint\Lab2_Shablony.dll
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\Lab2_Shablony.pdb
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\Lab2_Shablony.genruntimeconfig.cache
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab2_Shablony\Lab2_Shablony\obj\Debug\net6.0\ref\Lab2_Shablony.dll
