@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Lab5": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\MegaNotik\\Desktop\\Універ\\Лабораторні роботи C#\\Labs C# 2 kurs\\Lab6 C#",
+      "sqlDebugging": true
+    }
+  }
+}
