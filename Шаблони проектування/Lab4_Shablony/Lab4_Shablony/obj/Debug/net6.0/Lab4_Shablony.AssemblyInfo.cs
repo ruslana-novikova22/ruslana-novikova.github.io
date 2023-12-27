@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab4_Shablony")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0762d2cd1858d6127c816c476c186aa32135e385")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab4_Shablony")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab4_Shablony")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

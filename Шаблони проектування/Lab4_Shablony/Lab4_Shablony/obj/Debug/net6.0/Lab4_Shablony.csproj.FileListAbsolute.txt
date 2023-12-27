@@ -3,7 +3,6 @@ C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\
 C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab4_Shablony\Lab4_Shablony\bin\Debug\net6.0\Lab4_Shablony.runtimeconfig.json
 C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab4_Shablony\Lab4_Shablony\bin\Debug\net6.0\Lab4_Shablony.dll
 C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab4_Shablony\Lab4_Shablony\bin\Debug\net6.0\Lab4_Shablony.pdb
-C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab4_Shablony\Lab4_Shablony\obj\Debug\net6.0\Lab4_Shablony.csproj.AssemblyReference.cache
 C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab4_Shablony\Lab4_Shablony\obj\Debug\net6.0\Lab4_Shablony.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab4_Shablony\Lab4_Shablony\obj\Debug\net6.0\Lab4_Shablony.AssemblyInfoInputs.cache
 C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\Lab4_Shablony\Lab4_Shablony\obj\Debug\net6.0\Lab4_Shablony.AssemblyInfo.cs

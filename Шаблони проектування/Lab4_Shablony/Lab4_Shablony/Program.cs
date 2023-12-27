@@ -1,169 +1,139 @@
-﻿/*4. Система публікує новини. Новини бувають в текстовому форматі та відео. 
-Кожна новина це об’єкт що містить заголовок, теми новини (масив слів) та текст новини чи  URL відео.
-Публікація новини  полягає у додаванні відповідного об'єкту до однієї із 2 колекцій.
-Користувач може підписатися на всі текстові новини, на всі відео новини чи тільки текстові новини 
-за вказаною темою. При публікації новини надсилати користувачу, згідно з його підпискою, 
-повідомлення про новину (в консоль вивести заголовок новини).*/
-
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
-namespace Lab4
+public interface IObserver
 {
-    internal class Program
+    void Update(string newsTitle);
+}
+
+public class NewsSubscriber : IObserver
+{
+    private string name;
+
+    public NewsSubscriber(string name)
     {
-        public class News
-        {
-            public string Title { get; set; }
-            public string[] Topics { get; set; }
-        }
-        public class Text : News
-        {
-            public string TextNews { get; set; }
-        }
-        public class Video : News
-        {
-            public string VideoUrl { get; set; }
-        }
-        //Спостерігач
-        public interface IUser
-        {
-            void Update(News news);
-        }
+        this.name = name;
+    }
 
-        //Об'єкти
-        public interface ISystem
-        {
-            void AttachForText(IUser user);
-            void AttachForVideo(IUser user);
-            void DetachForText(IUser user);
-            void DetachForVideo(IUser user);
-            void NotifyText();
-            void NotifyVideo();
-        }
-
-        public class System: ISystem
-        {
-            List<IUser> forText = new List<IUser>();
-            List<IUser> forVideo = new List<IUser>();
-            private List<Text> collectionText = new List<Text>();
-            private List<Video> collectionVideo = new List<Video>();
-            public void AttachForText(IUser user)
-            {
-                Console.WriteLine("Attached the user");
-                this.forText.Add(user);
-            }
-            public void AttachForVideo(IUser user)
-            {
-                Console.WriteLine("Attached the user");
-                this.forVideo.Add(user);
-            }
-            public void DetachForText(IUser user)
-            {
-                this.forText.Remove(user);
-                Console.WriteLine("Remove the user");
-            }
-            public void DetachForVideo(IUser user)
-            {
-                this.forVideo.Remove(user);
-                Console.WriteLine("Remove the user");
-            }
-            public void NotifyText()
-            {
-                Console.WriteLine("Notifying users...");
-                foreach(var user in forText)
-                {
-                    user.Update(collectionText[collectionText.Count - 1]);
-                }
-            }
-            public void NotifyVideo()
-            {
-                Console.WriteLine("Notifying users...");
-                foreach(var user in forVideo)
-                {
-                    user.Update(collectionVideo[collectionVideo.Count - 1]);
-                }
-            }
-
-            public void AddTextNews(Text news)
-            {
-                collectionText.Add(news);
-                this.NotifyText();
-            }
-            public void AddVideoNews(Video news)
-            {
-                collectionVideo.Add(news);
-                this.NotifyVideo();
-            }
-        }
-        public class User: IUser
-        {
-            private string name;
-            public User(string name)
-            {
-                this.name=name;
-            }
-            public void Update(News news)
-            {
-                Console.WriteLine($"{name} received an update: {news.Title}");
-            }
-            public void SubscribeTextNews(ISystem system)
-            {
-                system.AttachForText(this);
-            }
-            public void SubscribeVideoNews(ISystem system)
-            {
-                system.AttachForVideo(this);
-            }
-            public void UnsubscribeTextNews(ISystem system)
-            {
-                system.DetachForText(this);
-            }
-            public void UnsubscribeVideoNews(ISystem system)
-            {
-                system.DetachForVideo(this);
-            }
-        }
-        static void Main(string[] args)
-        {
-            var newsSys = new System();
-
-            User user1 = new User("User1");
-            User user2 = new User("User2");
-
-            user1.SubscribeTextNews(newsSys);
-            user2.SubscribeVideoNews(newsSys);
-
-            var news1 = new Text
-            {
-                Title = "Text News 1",
-                TextNews = "This is a sample text news."
-            };
-
-            var news2 = new Video
-            {
-                Title = "Video News 1",
-                VideoUrl = "https://example.com/sample_video"
-            };
-
-            newsSys.AddTextNews(news1);
-            newsSys.AddVideoNews(news2);
-
-            user1.UnsubscribeTextNews(newsSys);
-
-            Text anotherTextNews = new Text
-            {
-                Title = "Text News 2",
-                TextNews = "Another sample text news."
-            };
-
-            newsSys.AddTextNews(anotherTextNews);
-        }
+    public void Update(string newsTitle)
+    {
+        Console.WriteLine($"{name} отримав(ла) повiдомлення: {newsTitle}");
     }
 }
 
+public interface IObservable
+{
+    void AddObserver(IObserver observer);
+    void RemoveObserver(IObserver observer);
+    void NotifyObservers(string newsTitle);
+}
+
+public class News : IObservable
+{
+    public string Title { get; }
+    public string[] Topics { get; }
+    public string Text { get; }
+    public string VideoUrl { get; }
+
+    private List<IObserver> observers = new List<IObserver>();
+
+    public News(string title, string[] topics, string text, string videoUrl)
+    {
+        Title = title;
+        Topics = topics;
+        Text = text;
+        VideoUrl = videoUrl;
+    }
+
+    public void AddObserver(IObserver observer)
+    {
+        observers.Add(observer);
+    }
+
+    public void RemoveObserver(IObserver observer)
+    {
+        observers.Remove(observer);
+    }
+
+    public void NotifyObservers(string newsTitle)
+    {
+        foreach (var observer in observers)
+        {
+            observer.Update(newsTitle);
+        }
+    }
+
+    public void Publish()
+    {
+        string newsTitle = Title;
+        NotifyObservers(newsTitle);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        IObserver textNewsSubscriber = new NewsSubscriber("Текстовий пiдписник");
+        IObserver videoNewsSubscriber = new NewsSubscriber("Вiдео пiдписник");
+        IObserver topicSubscriber = new NewsSubscriber("Пiдписник за темою");
+
+        News news = new News("Заголовок новини", new string[] { "полiтика", "економiка" }, "Текст новини", "URL відео");
+
+        Console.WriteLine("Оберiть тему для пiдписки: 1 - Текстовi новини, 2 - Вiдео новини, 3 - Полiтика");
+        string choice = Console.ReadLine();
+
+        switch (choice)
+        {
+            case "1":
+                news.AddObserver(textNewsSubscriber);
+                break;
+            case "2":
+                news.AddObserver(videoNewsSubscriber);
+                break;
+            case "3":
+                news.AddObserver(topicSubscriber);
+                break;
+            default:
+                Console.WriteLine("Невiрний вибiр.");
+                break;
+        }
+
+        news.Publish();
+
+        Console.WriteLine("Обновити новини? (Y/N)");
+        string updateChoice = Console.ReadLine();
+
+        if (updateChoice.ToUpper() == "Y")
+        {
+            news.Publish();
+        }
+
+        Console.WriteLine("Бажаєте вiдписатися вiд новин? (Y/N)");
+        string unsubscribeChoice = Console.ReadLine();
+
+        if (unsubscribeChoice.ToUpper() == "Y")
+        {
+            Console.WriteLine("Оберiть тему для вiдписки: 1 - Текстовi новини, 2 - Вiдео новини, 3 - Полiтика");
+            string unsubscribeTopic = Console.ReadLine();
+
+            switch (unsubscribeTopic)
+            {
+                case "1":
+                    news.RemoveObserver(textNewsSubscriber);
+                    break;
+                case "2":
+                    news.RemoveObserver(videoNewsSubscriber);
+                    break;
+                case "3":
+                    news.RemoveObserver(topicSubscriber);
+                    break;
+                default:
+                    Console.WriteLine("Невiрний вибiр.");
+                    break;
+            }
+        }
+
+        Console.ReadKey();
+    }
+}
