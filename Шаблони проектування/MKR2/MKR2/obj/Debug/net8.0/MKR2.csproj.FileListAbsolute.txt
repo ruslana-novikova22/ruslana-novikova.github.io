@@ -1,0 +1,14 @@
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\bin\Debug\net8.0\MKR2.exe
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\bin\Debug\net8.0\MKR2.deps.json
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\bin\Debug\net8.0\MKR2.runtimeconfig.json
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\bin\Debug\net8.0\MKR2.dll
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\bin\Debug\net8.0\MKR2.pdb
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\MKR2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\MKR2.AssemblyInfoInputs.cache
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\MKR2.AssemblyInfo.cs
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\MKR2.csproj.CoreCompileInputs.cache
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\MKR2.dll
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\refint\MKR2.dll
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\MKR2.pdb
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\MKR2.genruntimeconfig.cache
+C:\Users\MegaNotik\Desktop\Універ\Шаблони проектування\MKR2\MKR2\obj\Debug\net8.0\ref\MKR2.dll
